@@ -30,27 +30,27 @@ namespace Tyuiu.KornilovKA.Sprint6.Task1.V9
         private void InitializeComponent()
         {
             this.groupBoxTask_KKA = new System.Windows.Forms.GroupBox();
+            this.pictureBoxTask_KKA = new System.Windows.Forms.PictureBox();
+            this.textBoxTask_KKA = new System.Windows.Forms.TextBox();
             this.groupBoxInputData_KKA = new System.Windows.Forms.GroupBox();
+            this.labelStopValue_KKA = new System.Windows.Forms.Label();
+            this.labelStartValue_KKA = new System.Windows.Forms.Label();
+            this.textBoxStopValue_KKA = new System.Windows.Forms.TextBox();
+            this.textBoxStartValue_KKA = new System.Windows.Forms.TextBox();
             this.buttonExecute_KKA = new System.Windows.Forms.Button();
             this.buttonReference_KKA = new System.Windows.Forms.Button();
-            this.textBoxStartValue_KKA = new System.Windows.Forms.TextBox();
-            this.textBoxStopValue_KKA = new System.Windows.Forms.TextBox();
-            this.labelStartValue_KKA = new System.Windows.Forms.Label();
-            this.labelStopValue_KKA = new System.Windows.Forms.Label();
             this.groupBoxOutputData_KKA = new System.Windows.Forms.GroupBox();
-            this.textBoxResult_KKA = new System.Windows.Forms.TextBox();
             this.labelResult_KKA = new System.Windows.Forms.Label();
-            this.textBoxTask_KKA = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBoxResult_KKA = new System.Windows.Forms.TextBox();
             this.groupBoxTask_KKA.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTask_KKA)).BeginInit();
             this.groupBoxInputData_KKA.SuspendLayout();
             this.groupBoxOutputData_KKA.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxTask_KKA
             // 
-            this.groupBoxTask_KKA.Controls.Add(this.pictureBox1);
+            this.groupBoxTask_KKA.Controls.Add(this.pictureBoxTask_KKA);
             this.groupBoxTask_KKA.Controls.Add(this.textBoxTask_KKA);
             this.groupBoxTask_KKA.Location = new System.Drawing.Point(13, 13);
             this.groupBoxTask_KKA.Name = "groupBoxTask_KKA";
@@ -58,6 +58,28 @@ namespace Tyuiu.KornilovKA.Sprint6.Task1.V9
             this.groupBoxTask_KKA.TabIndex = 0;
             this.groupBoxTask_KKA.TabStop = false;
             this.groupBoxTask_KKA.Text = "Условие";
+            // 
+            // pictureBoxTask_KKA
+            // 
+            this.pictureBoxTask_KKA.Image = global::Tyuiu.KornilovKA.Sprint6.Task1.V9.Properties.Resources.task1;
+            this.pictureBoxTask_KKA.Location = new System.Drawing.Point(10, 57);
+            this.pictureBoxTask_KKA.Name = "pictureBoxTask_KKA";
+            this.pictureBoxTask_KKA.Size = new System.Drawing.Size(240, 40);
+            this.pictureBoxTask_KKA.TabIndex = 1;
+            this.pictureBoxTask_KKA.TabStop = false;
+            // 
+            // textBoxTask_KKA
+            // 
+            this.textBoxTask_KKA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxTask_KKA.Location = new System.Drawing.Point(10, 20);
+            this.textBoxTask_KKA.Multiline = true;
+            this.textBoxTask_KKA.Name = "textBoxTask_KKA";
+            this.textBoxTask_KKA.ReadOnly = true;
+            this.textBoxTask_KKA.Size = new System.Drawing.Size(269, 31);
+            this.textBoxTask_KKA.TabIndex = 0;
+            this.textBoxTask_KKA.TabStop = false;
+            this.textBoxTask_KKA.Text = "Протабулировать функцию на заданном диапазоне.\r\nРезультат вывести в виде таблице." +
+    "";
             // 
             // groupBoxInputData_KKA
             // 
@@ -71,6 +93,42 @@ namespace Tyuiu.KornilovKA.Sprint6.Task1.V9
             this.groupBoxInputData_KKA.TabIndex = 1;
             this.groupBoxInputData_KKA.TabStop = false;
             this.groupBoxInputData_KKA.Text = "Ввод данных";
+            // 
+            // labelStopValue_KKA
+            // 
+            this.labelStopValue_KKA.AutoSize = true;
+            this.labelStopValue_KKA.Location = new System.Drawing.Point(134, 20);
+            this.labelStopValue_KKA.Name = "labelStopValue_KKA";
+            this.labelStopValue_KKA.Size = new System.Drawing.Size(69, 13);
+            this.labelStopValue_KKA.TabIndex = 3;
+            this.labelStopValue_KKA.Text = "Конец шага:";
+            // 
+            // labelStartValue_KKA
+            // 
+            this.labelStartValue_KKA.AutoSize = true;
+            this.labelStartValue_KKA.Location = new System.Drawing.Point(7, 20);
+            this.labelStartValue_KKA.Name = "labelStartValue_KKA";
+            this.labelStartValue_KKA.Size = new System.Drawing.Size(67, 13);
+            this.labelStartValue_KKA.TabIndex = 2;
+            this.labelStartValue_KKA.Text = "Старт шага:";
+            // 
+            // textBoxStopValue_KKA
+            // 
+            this.textBoxStopValue_KKA.Location = new System.Drawing.Point(133, 34);
+            this.textBoxStopValue_KKA.Name = "textBoxStopValue_KKA";
+            this.textBoxStopValue_KKA.Size = new System.Drawing.Size(120, 20);
+            this.textBoxStopValue_KKA.TabIndex = 1;
+            this.textBoxStopValue_KKA.TabStop = false;
+            this.textBoxStopValue_KKA.Text = "5";
+            // 
+            // textBoxStartValue_KKA
+            // 
+            this.textBoxStartValue_KKA.Location = new System.Drawing.Point(7, 34);
+            this.textBoxStartValue_KKA.Name = "textBoxStartValue_KKA";
+            this.textBoxStartValue_KKA.Size = new System.Drawing.Size(120, 20);
+            this.textBoxStartValue_KKA.TabIndex = 0;
+            this.textBoxStartValue_KKA.TabStop = false;
+            this.textBoxStartValue_KKA.Text = "-5";
             // 
             // buttonExecute_KKA
             // 
@@ -96,42 +154,6 @@ namespace Tyuiu.KornilovKA.Sprint6.Task1.V9
             this.buttonReference_KKA.UseVisualStyleBackColor = false;
             this.buttonReference_KKA.Click += new System.EventHandler(this.buttonReference_KKA_Click);
             // 
-            // textBoxStartValue_KKA
-            // 
-            this.textBoxStartValue_KKA.Location = new System.Drawing.Point(7, 34);
-            this.textBoxStartValue_KKA.Name = "textBoxStartValue_KKA";
-            this.textBoxStartValue_KKA.Size = new System.Drawing.Size(120, 20);
-            this.textBoxStartValue_KKA.TabIndex = 0;
-            this.textBoxStartValue_KKA.TabStop = false;
-            this.textBoxStartValue_KKA.Text = "-5";
-            // 
-            // textBoxStopValue_KKA
-            // 
-            this.textBoxStopValue_KKA.Location = new System.Drawing.Point(133, 34);
-            this.textBoxStopValue_KKA.Name = "textBoxStopValue_KKA";
-            this.textBoxStopValue_KKA.Size = new System.Drawing.Size(120, 20);
-            this.textBoxStopValue_KKA.TabIndex = 1;
-            this.textBoxStopValue_KKA.TabStop = false;
-            this.textBoxStopValue_KKA.Text = "5";
-            // 
-            // labelStartValue_KKA
-            // 
-            this.labelStartValue_KKA.AutoSize = true;
-            this.labelStartValue_KKA.Location = new System.Drawing.Point(7, 20);
-            this.labelStartValue_KKA.Name = "labelStartValue_KKA";
-            this.labelStartValue_KKA.Size = new System.Drawing.Size(67, 13);
-            this.labelStartValue_KKA.TabIndex = 2;
-            this.labelStartValue_KKA.Text = "Старт шага:";
-            // 
-            // labelStopValue_KKA
-            // 
-            this.labelStopValue_KKA.AutoSize = true;
-            this.labelStopValue_KKA.Location = new System.Drawing.Point(134, 20);
-            this.labelStopValue_KKA.Name = "labelStopValue_KKA";
-            this.labelStopValue_KKA.Size = new System.Drawing.Size(69, 13);
-            this.labelStopValue_KKA.TabIndex = 3;
-            this.labelStopValue_KKA.Text = "Конец шага:";
-            // 
             // groupBoxOutputData_KKA
             // 
             this.groupBoxOutputData_KKA.Controls.Add(this.labelResult_KKA);
@@ -142,6 +164,15 @@ namespace Tyuiu.KornilovKA.Sprint6.Task1.V9
             this.groupBoxOutputData_KKA.TabIndex = 4;
             this.groupBoxOutputData_KKA.TabStop = false;
             this.groupBoxOutputData_KKA.Text = "Вывод данных";
+            // 
+            // labelResult_KKA
+            // 
+            this.labelResult_KKA.AutoSize = true;
+            this.labelResult_KKA.Location = new System.Drawing.Point(7, 20);
+            this.labelResult_KKA.Name = "labelResult_KKA";
+            this.labelResult_KKA.Size = new System.Drawing.Size(62, 13);
+            this.labelResult_KKA.TabIndex = 1;
+            this.labelResult_KKA.Text = "Результат:";
             // 
             // textBoxResult_KKA
             // 
@@ -155,37 +186,6 @@ namespace Tyuiu.KornilovKA.Sprint6.Task1.V9
             this.textBoxResult_KKA.Size = new System.Drawing.Size(220, 251);
             this.textBoxResult_KKA.TabIndex = 0;
             this.textBoxResult_KKA.TabStop = false;
-            // 
-            // labelResult_KKA
-            // 
-            this.labelResult_KKA.AutoSize = true;
-            this.labelResult_KKA.Location = new System.Drawing.Point(7, 20);
-            this.labelResult_KKA.Name = "labelResult_KKA";
-            this.labelResult_KKA.Size = new System.Drawing.Size(62, 13);
-            this.labelResult_KKA.TabIndex = 1;
-            this.labelResult_KKA.Text = "Результат:";
-            // 
-            // textBoxTask_KKA
-            // 
-            this.textBoxTask_KKA.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxTask_KKA.Location = new System.Drawing.Point(10, 20);
-            this.textBoxTask_KKA.Multiline = true;
-            this.textBoxTask_KKA.Name = "textBoxTask_KKA";
-            this.textBoxTask_KKA.ReadOnly = true;
-            this.textBoxTask_KKA.Size = new System.Drawing.Size(269, 31);
-            this.textBoxTask_KKA.TabIndex = 0;
-            this.textBoxTask_KKA.TabStop = false;
-            this.textBoxTask_KKA.Text = "Протабулировать функцию на заданном диапазоне.\r\nРезультат вывести в виде таблице." +
-    "";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Tyuiu.KornilovKA.Sprint6.Task1.V9.Properties.Resources.task1;
-            this.pictureBox1.Location = new System.Drawing.Point(10, 57);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(240, 40);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // FormMain
             // 
@@ -204,11 +204,11 @@ namespace Tyuiu.KornilovKA.Sprint6.Task1.V9
             this.Text = "Спринт 6 | Таск 1 | Вариант 9 | Корнилов К.А.";
             this.groupBoxTask_KKA.ResumeLayout(false);
             this.groupBoxTask_KKA.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTask_KKA)).EndInit();
             this.groupBoxInputData_KKA.ResumeLayout(false);
             this.groupBoxInputData_KKA.PerformLayout();
             this.groupBoxOutputData_KKA.ResumeLayout(false);
             this.groupBoxOutputData_KKA.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -227,7 +227,7 @@ namespace Tyuiu.KornilovKA.Sprint6.Task1.V9
         private System.Windows.Forms.Label labelResult_KKA;
         private System.Windows.Forms.TextBox textBoxResult_KKA;
         private System.Windows.Forms.TextBox textBoxTask_KKA;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBoxTask_KKA;
     }
 }
 
