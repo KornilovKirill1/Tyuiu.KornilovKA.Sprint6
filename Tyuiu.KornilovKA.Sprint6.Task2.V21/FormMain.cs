@@ -26,7 +26,7 @@ namespace Tyuiu.KornilovKA.Sprint6.Task2.V21
         DataService ds = new DataService();
         private void buttonReference_KKA_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Таск 1 выполнил студент группы ИИПб-23-1 Корнилов Кирилл Андреевич", "Сообщение", MessageBoxButtons.OK);
+            MessageBox.Show("Таск 2 выполнил студент группы ИИПб-23-1 Корнилов Кирилл Андреевич", "Сообщение", MessageBoxButtons.OK);
         }
 
         private void buttonExecute_KKA_Click(object sender, EventArgs e)
@@ -50,10 +50,9 @@ namespace Tyuiu.KornilovKA.Sprint6.Task2.V21
                     startValue++;
                 }
 
-            } catch(Exception ex)
+            } catch
             {
-                //MessageBox.Show("Введены неверные данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                MessageBox.Show(ex.ToString());
+                MessageBox.Show("Введены неверные данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
 
