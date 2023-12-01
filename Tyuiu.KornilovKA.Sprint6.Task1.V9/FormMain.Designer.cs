@@ -29,7 +29,6 @@ namespace Tyuiu.KornilovKA.Sprint6.Task1.V9
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.groupBoxTask_KKA = new System.Windows.Forms.GroupBox();
             this.groupBoxInputData_KKA = new System.Windows.Forms.GroupBox();
             this.buttonExecute_KKA = new System.Windows.Forms.Button();
@@ -181,7 +180,7 @@ namespace Tyuiu.KornilovKA.Sprint6.Task1.V9
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Image = global::Tyuiu.KornilovKA.Sprint6.Task1.V9.Properties.Resources.task1;
             this.pictureBox1.Location = new System.Drawing.Point(10, 57);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(240, 40);
