@@ -31,11 +31,11 @@ namespace Tyuiu.KornilovKA.Sprint6.Task3.V11
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.groupBoxTask_KKA = new System.Windows.Forms.GroupBox();
-            this.textBoxTask_KKA = new System.Windows.Forms.TextBox();
             this.dataGridViewTaskMatrix_KKA = new System.Windows.Forms.DataGridView();
+            this.textBoxTask_KKA = new System.Windows.Forms.TextBox();
             this.groupBoxOutputData_KKA = new System.Windows.Forms.GroupBox();
-            this.labelResult_KKA = new System.Windows.Forms.Label();
             this.dataGridViewMatrixResult_KKA = new System.Windows.Forms.DataGridView();
+            this.labelResult_KKA = new System.Windows.Forms.Label();
             this.buttonReference_KKA = new System.Windows.Forms.Button();
             this.buttonDone_KKA = new System.Windows.Forms.Button();
             this.groupBoxTask_KKA.SuspendLayout();
@@ -55,6 +55,17 @@ namespace Tyuiu.KornilovKA.Sprint6.Task3.V11
             this.groupBoxTask_KKA.TabStop = false;
             this.groupBoxTask_KKA.Text = "Условие";
             // 
+            // dataGridViewTaskMatrix_KKA
+            // 
+            this.dataGridViewTaskMatrix_KKA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewTaskMatrix_KKA.ColumnHeadersVisible = false;
+            this.dataGridViewTaskMatrix_KKA.Location = new System.Drawing.Point(223, 12);
+            this.dataGridViewTaskMatrix_KKA.Name = "dataGridViewTaskMatrix_KKA";
+            this.dataGridViewTaskMatrix_KKA.RowHeadersVisible = false;
+            this.dataGridViewTaskMatrix_KKA.Size = new System.Drawing.Size(220, 190);
+            this.dataGridViewTaskMatrix_KKA.TabIndex = 1;
+            this.dataGridViewTaskMatrix_KKA.TabStop = false;
+            // 
             // textBoxTask_KKA
             // 
             this.textBoxTask_KKA.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -67,17 +78,6 @@ namespace Tyuiu.KornilovKA.Sprint6.Task3.V11
             this.textBoxTask_KKA.TabStop = false;
             this.textBoxTask_KKA.Text = resources.GetString("textBoxTask_KKA.Text");
             // 
-            // dataGridViewTaskMatrix_KKA
-            // 
-            this.dataGridViewTaskMatrix_KKA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewTaskMatrix_KKA.ColumnHeadersVisible = false;
-            this.dataGridViewTaskMatrix_KKA.Location = new System.Drawing.Point(223, 12);
-            this.dataGridViewTaskMatrix_KKA.Name = "dataGridViewTaskMatrix_KKA";
-            this.dataGridViewTaskMatrix_KKA.RowHeadersVisible = false;
-            this.dataGridViewTaskMatrix_KKA.Size = new System.Drawing.Size(220, 190);
-            this.dataGridViewTaskMatrix_KKA.TabIndex = 1;
-            this.dataGridViewTaskMatrix_KKA.TabStop = false;
-            // 
             // groupBoxOutputData_KKA
             // 
             this.groupBoxOutputData_KKA.Controls.Add(this.dataGridViewMatrixResult_KKA);
@@ -89,6 +89,18 @@ namespace Tyuiu.KornilovKA.Sprint6.Task3.V11
             this.groupBoxOutputData_KKA.TabStop = false;
             this.groupBoxOutputData_KKA.Text = "Вывод данных";
             // 
+            // dataGridViewMatrixResult_KKA
+            // 
+            this.dataGridViewMatrixResult_KKA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewMatrixResult_KKA.ColumnHeadersVisible = false;
+            this.dataGridViewMatrixResult_KKA.Location = new System.Drawing.Point(10, 37);
+            this.dataGridViewMatrixResult_KKA.Name = "dataGridViewMatrixResult_KKA";
+            this.dataGridViewMatrixResult_KKA.ReadOnly = true;
+            this.dataGridViewMatrixResult_KKA.RowHeadersVisible = false;
+            this.dataGridViewMatrixResult_KKA.Size = new System.Drawing.Size(153, 127);
+            this.dataGridViewMatrixResult_KKA.TabIndex = 2;
+            this.dataGridViewMatrixResult_KKA.TabStop = false;
+            // 
             // labelResult_KKA
             // 
             this.labelResult_KKA.AutoSize = true;
@@ -97,17 +109,6 @@ namespace Tyuiu.KornilovKA.Sprint6.Task3.V11
             this.labelResult_KKA.Size = new System.Drawing.Size(62, 13);
             this.labelResult_KKA.TabIndex = 1;
             this.labelResult_KKA.Text = "Результат:";
-            // 
-            // dataGridViewMatrixResult_KKA
-            // 
-            this.dataGridViewMatrixResult_KKA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewMatrixResult_KKA.ColumnHeadersVisible = false;
-            this.dataGridViewMatrixResult_KKA.Location = new System.Drawing.Point(10, 37);
-            this.dataGridViewMatrixResult_KKA.Name = "dataGridViewMatrixResult_KKA";
-            this.dataGridViewMatrixResult_KKA.RowHeadersVisible = false;
-            this.dataGridViewMatrixResult_KKA.Size = new System.Drawing.Size(153, 127);
-            this.dataGridViewMatrixResult_KKA.TabIndex = 2;
-            this.dataGridViewMatrixResult_KKA.TabStop = false;
             // 
             // buttonReference_KKA
             // 
