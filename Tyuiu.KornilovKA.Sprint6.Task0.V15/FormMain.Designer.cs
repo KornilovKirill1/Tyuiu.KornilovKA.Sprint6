@@ -75,6 +75,7 @@ namespace Tyuiu.KornilovKA.Sprint6.Task0.V15
             this.textBoxTask_KKA.ReadOnly = true;
             this.textBoxTask_KKA.Size = new System.Drawing.Size(183, 13);
             this.textBoxTask_KKA.TabIndex = 0;
+            this.textBoxTask_KKA.TabStop = false;
             this.textBoxTask_KKA.Text = "Вычислить выражение по формуле";
             // 
             // groupBoxInputData_KKA
@@ -103,6 +104,7 @@ namespace Tyuiu.KornilovKA.Sprint6.Task0.V15
             this.textBoxInputVarX_KKA.Name = "textBoxInputVarX_KKA";
             this.textBoxInputVarX_KKA.Size = new System.Drawing.Size(112, 20);
             this.textBoxInputVarX_KKA.TabIndex = 0;
+            this.textBoxInputVarX_KKA.TabStop = false;
             this.textBoxInputVarX_KKA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxInputVarX_KKA_KeyPress);
             // 
             // groupBoxOutData_KKA
@@ -123,6 +125,7 @@ namespace Tyuiu.KornilovKA.Sprint6.Task0.V15
             this.textBoxOutputResult_KKA.ReadOnly = true;
             this.textBoxOutputResult_KKA.Size = new System.Drawing.Size(117, 20);
             this.textBoxOutputResult_KKA.TabIndex = 1;
+            this.textBoxOutputResult_KKA.TabStop = false;
             // 
             // labelResult_KKA
             // 
@@ -139,6 +142,7 @@ namespace Tyuiu.KornilovKA.Sprint6.Task0.V15
             this.buttonDone_KKA.Name = "buttonDone_KKA";
             this.buttonDone_KKA.Size = new System.Drawing.Size(87, 38);
             this.buttonDone_KKA.TabIndex = 3;
+            this.buttonDone_KKA.TabStop = false;
             this.buttonDone_KKA.Text = "Выполнить";
             this.buttonDone_KKA.UseVisualStyleBackColor = true;
             this.buttonDone_KKA.Click += new System.EventHandler(this.buttonDone_KKA_Click);
@@ -151,6 +155,7 @@ namespace Tyuiu.KornilovKA.Sprint6.Task0.V15
             this.buttonHelp_KKA.Name = "buttonHelp_KKA";
             this.buttonHelp_KKA.Size = new System.Drawing.Size(37, 37);
             this.buttonHelp_KKA.TabIndex = 4;
+            this.buttonHelp_KKA.TabStop = false;
             this.buttonHelp_KKA.Text = "?";
             this.buttonHelp_KKA.UseVisualStyleBackColor = false;
             this.buttonHelp_KKA.Click += new System.EventHandler(this.buttonHelp_KKA_Click);
@@ -159,7 +164,7 @@ namespace Tyuiu.KornilovKA.Sprint6.Task0.V15
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(425, 376);
+            this.ClientSize = new System.Drawing.Size(425, 353);
             this.Controls.Add(this.buttonHelp_KKA);
             this.Controls.Add(this.buttonDone_KKA);
             this.Controls.Add(this.groupBoxOutData_KKA);
