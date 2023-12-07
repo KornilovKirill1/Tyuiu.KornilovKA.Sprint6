@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Text.RegularExpressions;
 
 using tyuiu.cources.programming.interfaces.Sprint6;
 
@@ -19,13 +20,27 @@ namespace Tyuiu.KornilovKA.Sprint6.Task6.V17.Lib
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    if (line == "")
+                    //if (line == "")
+                    //{
+                    //    continue;
+                    //} else
+                    //{
+                    //    string[] arrayString = line.Split(' ');
+                    //    resStr = resStr + arrayString[2] + " ";
+                    //}
+                    //StringBuilder result = new StringBuilder();
+                    if(line == "")
                     {
                         continue;
                     } else
                     {
-                        string[] arrayString = line.Split(' ');
-                        resStr = resStr + arrayString[2] + " ";
+                        List<string> result = new List<string>();
+                        MatchCollection words = Regex.Matches(line, @"[А-Яа-яA-Za-z]+");
+                        foreach (var word in words)
+                        {
+                            result.Add(word.ToString());
+                        }
+                        resStr = resStr + result[2] + " ";
                     }
                 }
             }
