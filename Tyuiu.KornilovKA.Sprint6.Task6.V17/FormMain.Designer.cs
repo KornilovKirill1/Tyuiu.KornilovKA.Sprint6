@@ -46,6 +46,7 @@ namespace Tyuiu.KornilovKA.Sprint6.Task6.V17
             this.textBoxResult_KKA = new System.Windows.Forms.TextBox();
             this.openFileDialogTask_KKA = new System.Windows.Forms.OpenFileDialog();
             this.toolTipButtons_KKA = new System.Windows.Forms.ToolTip(this.components);
+            this.splitterBetweenInputAndOutput_KKA = new System.Windows.Forms.Splitter();
             this.panelButtons_KKA.SuspendLayout();
             this.panelTask_KKA.SuspendLayout();
             this.groupBoxTask_KKA.SuspendLayout();
@@ -160,7 +161,7 @@ namespace Tyuiu.KornilovKA.Sprint6.Task6.V17
             this.panelLoadFromFile_KKA.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLoadFromFile_KKA.Location = new System.Drawing.Point(0, 134);
             this.panelLoadFromFile_KKA.Name = "panelLoadFromFile_KKA";
-            this.panelLoadFromFile_KKA.Padding = new System.Windows.Forms.Padding(2);
+            this.panelLoadFromFile_KKA.Padding = new System.Windows.Forms.Padding(5);
             this.panelLoadFromFile_KKA.Size = new System.Drawing.Size(442, 377);
             this.panelLoadFromFile_KKA.TabIndex = 2;
             // 
@@ -168,9 +169,9 @@ namespace Tyuiu.KornilovKA.Sprint6.Task6.V17
             // 
             this.groupBoxLoadFile_KKA.Controls.Add(this.textBoxLoadFile_KKA);
             this.groupBoxLoadFile_KKA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBoxLoadFile_KKA.Location = new System.Drawing.Point(2, 2);
+            this.groupBoxLoadFile_KKA.Location = new System.Drawing.Point(5, 5);
             this.groupBoxLoadFile_KKA.Name = "groupBoxLoadFile_KKA";
-            this.groupBoxLoadFile_KKA.Size = new System.Drawing.Size(438, 373);
+            this.groupBoxLoadFile_KKA.Size = new System.Drawing.Size(432, 367);
             this.groupBoxLoadFile_KKA.TabIndex = 0;
             this.groupBoxLoadFile_KKA.TabStop = false;
             this.groupBoxLoadFile_KKA.Text = "Ввод:";
@@ -184,7 +185,7 @@ namespace Tyuiu.KornilovKA.Sprint6.Task6.V17
             this.textBoxLoadFile_KKA.Name = "textBoxLoadFile_KKA";
             this.textBoxLoadFile_KKA.ReadOnly = true;
             this.textBoxLoadFile_KKA.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxLoadFile_KKA.Size = new System.Drawing.Size(432, 354);
+            this.textBoxLoadFile_KKA.Size = new System.Drawing.Size(426, 348);
             this.textBoxLoadFile_KKA.TabIndex = 0;
             this.textBoxLoadFile_KKA.TabStop = false;
             // 
@@ -194,7 +195,7 @@ namespace Tyuiu.KornilovKA.Sprint6.Task6.V17
             this.panelResult_KKA.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelResult_KKA.Location = new System.Drawing.Point(442, 134);
             this.panelResult_KKA.Name = "panelResult_KKA";
-            this.panelResult_KKA.Padding = new System.Windows.Forms.Padding(2);
+            this.panelResult_KKA.Padding = new System.Windows.Forms.Padding(5);
             this.panelResult_KKA.Size = new System.Drawing.Size(442, 377);
             this.panelResult_KKA.TabIndex = 3;
             // 
@@ -202,9 +203,9 @@ namespace Tyuiu.KornilovKA.Sprint6.Task6.V17
             // 
             this.groupBoxResult_KKA.Controls.Add(this.textBoxResult_KKA);
             this.groupBoxResult_KKA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBoxResult_KKA.Location = new System.Drawing.Point(2, 2);
+            this.groupBoxResult_KKA.Location = new System.Drawing.Point(5, 5);
             this.groupBoxResult_KKA.Name = "groupBoxResult_KKA";
-            this.groupBoxResult_KKA.Size = new System.Drawing.Size(438, 373);
+            this.groupBoxResult_KKA.Size = new System.Drawing.Size(432, 367);
             this.groupBoxResult_KKA.TabIndex = 0;
             this.groupBoxResult_KKA.TabStop = false;
             this.groupBoxResult_KKA.Text = "Вывод:";
@@ -218,7 +219,7 @@ namespace Tyuiu.KornilovKA.Sprint6.Task6.V17
             this.textBoxResult_KKA.Name = "textBoxResult_KKA";
             this.textBoxResult_KKA.ReadOnly = true;
             this.textBoxResult_KKA.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxResult_KKA.Size = new System.Drawing.Size(432, 354);
+            this.textBoxResult_KKA.Size = new System.Drawing.Size(426, 348);
             this.textBoxResult_KKA.TabIndex = 0;
             this.textBoxResult_KKA.TabStop = false;
             // 
@@ -231,11 +232,20 @@ namespace Tyuiu.KornilovKA.Sprint6.Task6.V17
             this.toolTipButtons_KKA.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTipButtons_KKA.ToolTipTitle = "Подсказка";
             // 
+            // splitterBetweenInputAndOutput_KKA
+            // 
+            this.splitterBetweenInputAndOutput_KKA.Location = new System.Drawing.Point(442, 134);
+            this.splitterBetweenInputAndOutput_KKA.Name = "splitterBetweenInputAndOutput_KKA";
+            this.splitterBetweenInputAndOutput_KKA.Size = new System.Drawing.Size(3, 377);
+            this.splitterBetweenInputAndOutput_KKA.TabIndex = 4;
+            this.splitterBetweenInputAndOutput_KKA.TabStop = false;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 511);
+            this.Controls.Add(this.splitterBetweenInputAndOutput_KKA);
             this.Controls.Add(this.panelResult_KKA);
             this.Controls.Add(this.panelLoadFromFile_KKA);
             this.Controls.Add(this.panelTask_KKA);
@@ -275,6 +285,7 @@ namespace Tyuiu.KornilovKA.Sprint6.Task6.V17
         private System.Windows.Forms.TextBox textBoxResult_KKA;
         private System.Windows.Forms.ToolTip toolTipButtons_KKA;
         private System.Windows.Forms.OpenFileDialog openFileDialogTask_KKA;
+        private System.Windows.Forms.Splitter splitterBetweenInputAndOutput_KKA;
     }
 }
 

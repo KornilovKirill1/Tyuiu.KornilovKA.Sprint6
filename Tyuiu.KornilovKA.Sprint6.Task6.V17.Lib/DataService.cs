@@ -20,15 +20,6 @@ namespace Tyuiu.KornilovKA.Sprint6.Task6.V17.Lib
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    //if (line == "")
-                    //{
-                    //    continue;
-                    //} else
-                    //{
-                    //    string[] arrayString = line.Split(' ');
-                    //    resStr = resStr + arrayString[2] + " ";
-                    //}
-                    //StringBuilder result = new StringBuilder();
                     if(line == "")
                     {
                         continue;
