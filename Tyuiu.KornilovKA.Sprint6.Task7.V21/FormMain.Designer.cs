@@ -32,6 +32,10 @@ namespace Tyuiu.KornilovKA.Sprint6.Task7.V21
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panelButtons_KKA = new System.Windows.Forms.Panel();
+            this.buttonSave_KKA = new System.Windows.Forms.Button();
+            this.buttonInfo_KKA = new System.Windows.Forms.Button();
+            this.buttonDone_KKA = new System.Windows.Forms.Button();
+            this.buttonOpenFile_KKA = new System.Windows.Forms.Button();
             this.panelTask_KKA = new System.Windows.Forms.Panel();
             this.groupBoxTask_KKA = new System.Windows.Forms.GroupBox();
             this.textBoxTask_KKA = new System.Windows.Forms.TextBox();
@@ -45,10 +49,6 @@ namespace Tyuiu.KornilovKA.Sprint6.Task7.V21
             this.toolTipHelpButtons_KKA = new System.Windows.Forms.ToolTip(this.components);
             this.openFileDialogTask_KKA = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialogMatrix_KKA = new System.Windows.Forms.SaveFileDialog();
-            this.buttonSave_KKA = new System.Windows.Forms.Button();
-            this.buttonInfo_KKA = new System.Windows.Forms.Button();
-            this.buttonDone_KKA = new System.Windows.Forms.Button();
-            this.buttonOpenFile_KKA = new System.Windows.Forms.Button();
             this.panelButtons_KKA.SuspendLayout();
             this.panelTask_KKA.SuspendLayout();
             this.groupBoxTask_KKA.SuspendLayout();
@@ -72,6 +72,80 @@ namespace Tyuiu.KornilovKA.Sprint6.Task7.V21
             this.panelButtons_KKA.Name = "panelButtons_KKA";
             this.panelButtons_KKA.Size = new System.Drawing.Size(884, 66);
             this.panelButtons_KKA.TabIndex = 1;
+            // 
+            // buttonSave_KKA
+            // 
+            this.buttonSave_KKA.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonSave_KKA.Enabled = false;
+            this.buttonSave_KKA.FlatAppearance.BorderSize = 2;
+            this.buttonSave_KKA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSave_KKA.ForeColor = System.Drawing.Color.Silver;
+            this.buttonSave_KKA.Image = global::Tyuiu.KornilovKA.Sprint6.Task7.V21.Properties.Resources.page_save;
+            this.buttonSave_KKA.Location = new System.Drawing.Point(168, 4);
+            this.buttonSave_KKA.Name = "buttonSave_KKA";
+            this.buttonSave_KKA.Size = new System.Drawing.Size(75, 55);
+            this.buttonSave_KKA.TabIndex = 3;
+            this.buttonSave_KKA.TabStop = false;
+            this.toolTipHelpButtons_KKA.SetToolTip(this.buttonSave_KKA, "Сохранить обработанные данные в файл CSV");
+            this.buttonSave_KKA.UseVisualStyleBackColor = true;
+            this.buttonSave_KKA.Click += new System.EventHandler(this.buttonSave_KKA_Click);
+            this.buttonSave_KKA.MouseEnter += new System.EventHandler(this.buttonSave_KKA_MouseEnter);
+            // 
+            // buttonInfo_KKA
+            // 
+            this.buttonInfo_KKA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonInfo_KKA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonInfo_KKA.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonInfo_KKA.FlatAppearance.BorderSize = 2;
+            this.buttonInfo_KKA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonInfo_KKA.ForeColor = System.Drawing.Color.Silver;
+            this.buttonInfo_KKA.Image = global::Tyuiu.KornilovKA.Sprint6.Task7.V21.Properties.Resources.help;
+            this.buttonInfo_KKA.Location = new System.Drawing.Point(804, 4);
+            this.buttonInfo_KKA.Name = "buttonInfo_KKA";
+            this.buttonInfo_KKA.Size = new System.Drawing.Size(75, 55);
+            this.buttonInfo_KKA.TabIndex = 2;
+            this.buttonInfo_KKA.TabStop = false;
+            this.toolTipHelpButtons_KKA.SetToolTip(this.buttonInfo_KKA, "Сведения о программе");
+            this.buttonInfo_KKA.UseVisualStyleBackColor = true;
+            this.buttonInfo_KKA.Click += new System.EventHandler(this.buttonInfo_KKA_Click);
+            this.buttonInfo_KKA.MouseEnter += new System.EventHandler(this.buttonInfo_KKA_MouseEnter);
+            // 
+            // buttonDone_KKA
+            // 
+            this.buttonDone_KKA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonDone_KKA.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonDone_KKA.Enabled = false;
+            this.buttonDone_KKA.FlatAppearance.BorderSize = 2;
+            this.buttonDone_KKA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDone_KKA.ForeColor = System.Drawing.Color.Silver;
+            this.buttonDone_KKA.Image = global::Tyuiu.KornilovKA.Sprint6.Task7.V21.Properties.Resources.page_white_go;
+            this.buttonDone_KKA.Location = new System.Drawing.Point(86, 4);
+            this.buttonDone_KKA.Name = "buttonDone_KKA";
+            this.buttonDone_KKA.Size = new System.Drawing.Size(75, 55);
+            this.buttonDone_KKA.TabIndex = 1;
+            this.buttonDone_KKA.TabStop = false;
+            this.toolTipHelpButtons_KKA.SetToolTip(this.buttonDone_KKA, "Выполнить обработку данных");
+            this.buttonDone_KKA.UseVisualStyleBackColor = true;
+            this.buttonDone_KKA.Click += new System.EventHandler(this.buttonDone_KKA_Click);
+            this.buttonDone_KKA.MouseEnter += new System.EventHandler(this.buttonDone_KKA_MouseEnter);
+            // 
+            // buttonOpenFile_KKA
+            // 
+            this.buttonOpenFile_KKA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonOpenFile_KKA.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonOpenFile_KKA.FlatAppearance.BorderSize = 2;
+            this.buttonOpenFile_KKA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonOpenFile_KKA.ForeColor = System.Drawing.Color.Silver;
+            this.buttonOpenFile_KKA.Image = global::Tyuiu.KornilovKA.Sprint6.Task7.V21.Properties.Resources.folder_page;
+            this.buttonOpenFile_KKA.Location = new System.Drawing.Point(4, 4);
+            this.buttonOpenFile_KKA.Name = "buttonOpenFile_KKA";
+            this.buttonOpenFile_KKA.Size = new System.Drawing.Size(75, 55);
+            this.buttonOpenFile_KKA.TabIndex = 0;
+            this.buttonOpenFile_KKA.TabStop = false;
+            this.toolTipHelpButtons_KKA.SetToolTip(this.buttonOpenFile_KKA, "Открыть файл для обработки данных в формате CSV");
+            this.buttonOpenFile_KKA.UseVisualStyleBackColor = true;
+            this.buttonOpenFile_KKA.Click += new System.EventHandler(this.buttonOpenFile_KKA_Click);
+            this.buttonOpenFile_KKA.MouseEnter += new System.EventHandler(this.buttonOpenFile_KKA_MouseEnter);
             // 
             // panelTask_KKA
             // 
@@ -196,80 +270,6 @@ namespace Tyuiu.KornilovKA.Sprint6.Task7.V21
             // 
             this.openFileDialogTask_KKA.FileName = "openFileDialog1";
             // 
-            // buttonSave_KKA
-            // 
-            this.buttonSave_KKA.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSave_KKA.Enabled = false;
-            this.buttonSave_KKA.FlatAppearance.BorderSize = 2;
-            this.buttonSave_KKA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSave_KKA.ForeColor = System.Drawing.Color.Silver;
-            this.buttonSave_KKA.Image = global::Tyuiu.KornilovKA.Sprint6.Task7.V21.Properties.Resources.page_save;
-            this.buttonSave_KKA.Location = new System.Drawing.Point(168, 4);
-            this.buttonSave_KKA.Name = "buttonSave_KKA";
-            this.buttonSave_KKA.Size = new System.Drawing.Size(75, 55);
-            this.buttonSave_KKA.TabIndex = 3;
-            this.buttonSave_KKA.TabStop = false;
-            this.toolTipHelpButtons_KKA.SetToolTip(this.buttonSave_KKA, "Сохранить обработанные данные в файл CSV");
-            this.buttonSave_KKA.UseVisualStyleBackColor = true;
-            this.buttonSave_KKA.Click += new System.EventHandler(this.buttonSave_KKA_Click);
-            this.buttonSave_KKA.MouseEnter += new System.EventHandler(this.buttonSave_KKA_MouseEnter);
-            // 
-            // buttonInfo_KKA
-            // 
-            this.buttonInfo_KKA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonInfo_KKA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buttonInfo_KKA.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonInfo_KKA.FlatAppearance.BorderSize = 2;
-            this.buttonInfo_KKA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonInfo_KKA.ForeColor = System.Drawing.Color.Silver;
-            this.buttonInfo_KKA.Image = global::Tyuiu.KornilovKA.Sprint6.Task7.V21.Properties.Resources.help;
-            this.buttonInfo_KKA.Location = new System.Drawing.Point(804, 4);
-            this.buttonInfo_KKA.Name = "buttonInfo_KKA";
-            this.buttonInfo_KKA.Size = new System.Drawing.Size(75, 55);
-            this.buttonInfo_KKA.TabIndex = 2;
-            this.buttonInfo_KKA.TabStop = false;
-            this.toolTipHelpButtons_KKA.SetToolTip(this.buttonInfo_KKA, "Сведения о программе");
-            this.buttonInfo_KKA.UseVisualStyleBackColor = true;
-            this.buttonInfo_KKA.Click += new System.EventHandler(this.buttonInfo_KKA_Click);
-            this.buttonInfo_KKA.MouseEnter += new System.EventHandler(this.buttonInfo_KKA_MouseEnter);
-            // 
-            // buttonDone_KKA
-            // 
-            this.buttonDone_KKA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buttonDone_KKA.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonDone_KKA.Enabled = false;
-            this.buttonDone_KKA.FlatAppearance.BorderSize = 2;
-            this.buttonDone_KKA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDone_KKA.ForeColor = System.Drawing.Color.Silver;
-            this.buttonDone_KKA.Image = global::Tyuiu.KornilovKA.Sprint6.Task7.V21.Properties.Resources.page_white_go;
-            this.buttonDone_KKA.Location = new System.Drawing.Point(86, 4);
-            this.buttonDone_KKA.Name = "buttonDone_KKA";
-            this.buttonDone_KKA.Size = new System.Drawing.Size(75, 55);
-            this.buttonDone_KKA.TabIndex = 1;
-            this.buttonDone_KKA.TabStop = false;
-            this.toolTipHelpButtons_KKA.SetToolTip(this.buttonDone_KKA, "Выполнить обработку данных");
-            this.buttonDone_KKA.UseVisualStyleBackColor = true;
-            this.buttonDone_KKA.Click += new System.EventHandler(this.buttonDone_KKA_Click);
-            this.buttonDone_KKA.MouseEnter += new System.EventHandler(this.buttonDone_KKA_MouseEnter);
-            // 
-            // buttonOpenFile_KKA
-            // 
-            this.buttonOpenFile_KKA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buttonOpenFile_KKA.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonOpenFile_KKA.FlatAppearance.BorderSize = 2;
-            this.buttonOpenFile_KKA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonOpenFile_KKA.ForeColor = System.Drawing.Color.Silver;
-            this.buttonOpenFile_KKA.Image = global::Tyuiu.KornilovKA.Sprint6.Task7.V21.Properties.Resources.folder_page;
-            this.buttonOpenFile_KKA.Location = new System.Drawing.Point(4, 4);
-            this.buttonOpenFile_KKA.Name = "buttonOpenFile_KKA";
-            this.buttonOpenFile_KKA.Size = new System.Drawing.Size(75, 55);
-            this.buttonOpenFile_KKA.TabIndex = 0;
-            this.buttonOpenFile_KKA.TabStop = false;
-            this.toolTipHelpButtons_KKA.SetToolTip(this.buttonOpenFile_KKA, "Открыть файл для обработки данных в формате CSV");
-            this.buttonOpenFile_KKA.UseVisualStyleBackColor = true;
-            this.buttonOpenFile_KKA.Click += new System.EventHandler(this.buttonOpenFile_KKA_Click);
-            this.buttonOpenFile_KKA.MouseEnter += new System.EventHandler(this.buttonOpenFile_KKA_MouseEnter);
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -281,6 +281,7 @@ namespace Tyuiu.KornilovKA.Sprint6.Task7.V21
             this.Controls.Add(this.panelTask_KKA);
             this.Controls.Add(this.panelButtons_KKA);
             this.Name = "FormMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спринт 6 | Таск 7 | Вариант 21 | Корнилов К.А.";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormMain_Load);
